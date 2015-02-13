@@ -1,0 +1,294 @@
+c:\GADS\DAT_SF_12>dir
+ Volume in drive C is Windows
+ Volume Serial Number is E02C-7B7E
+
+ Directory of c:\GADS\DAT_SF_12
+
+01/29/2015  06:15 PM    <DIR>          .
+01/29/2015  06:15 PM    <DIR>          ..
+01/29/2015  06:15 PM                25 .gitignore
+01/29/2015  06:15 PM    <DIR>          .ipynb_checkpoints
+01/29/2015  06:15 PM            34,045 01 - Intro to Data.ipynb
+01/22/2015  07:55 PM            35,057 02 - Solutions.ipynb
+01/27/2015  05:15 PM           154,671 02 - SQL & Python-Copy0.ipynb
+01/27/2015  07:40 PM           125,659 02 - SQL & Python.ipynb
+01/22/2015  08:39 PM            68,242 03 - Twitter Mongo Lab Matt.ipynb
+01/27/2015  07:40 PM            70,390 03 - Twitter Mongo Lab.ipynb
+01/27/2015  07:40 PM            16,804 04 - Big Data I - AWS.ipynb
+01/27/2015  09:16 PM           141,286 04 - StarCluster Lab-Copy0.ipynb
+01/29/2015  06:15 PM           142,925 04 - StarCluster Lab.ipynb
+01/29/2015  06:15 PM            24,781 05 - Big Data II - MapReduce.ipynb
+01/29/2015  06:15 PM            12,436 05 - Hadoop Lab.ipynb
+01/29/2015  06:15 PM             8,787 05 - Spark Lab.ipynb
+01/22/2015  07:55 PM    <DIR>          assets
+01/22/2015  07:55 PM               154 dummy_api_cred.yml
+01/22/2015  07:55 PM         2,840,576 enron.db
+01/27/2015  08:56 PM    <DIR>          Homework
+01/22/2015  07:55 PM            38,646 Pandas for SQL Developers.ipynb
+01/29/2015  06:15 PM             1,798 README.md
+01/27/2015  08:32 PM            12,277 rootkey.csv.txt
+01/27/2015  07:40 PM                 0 sample.ipynb
+              19 File(s)      3,728,559 bytes
+               5 Dir(s)  428,306,591,744 bytes free
+
+c:\GADS\DAT_SF_12>cat rootkey.csv.txt
+'cat' is not recognized as an internal or external command,
+operable program or batch file.
+
+c:\GADS\DAT_SF_12>open rootkey.csv.txt
+'open' is not recognized as an internal or external command,
+operable program or batch file.
+
+c:\GADS\DAT_SF_12>export AWS_ACCESS_KEY_ID=AKIAJDLAEMKDSLQRAE2A
+'export' is not recognized as an internal or external command,
+operable program or batch file.
+
+c:\GADS\DAT_SF_12>set AWS_ACCESS_KEY_ID=AKIAJDLAEMKDSLQRAE2A
+
+c:\GADS\DAT_SF_12>set AWS_SECRET_ACCESS_KEY=0buQLG6+FLTU2DrYRwAcnp/1tDC3v7XLor/G
+eOMy
+
+c:\GADS\DAT_SF_12>cd ..
+
+c:\GADS>cd spark-1.2.0-bin-hadoop2.4
+
+c:\GADS\spark-1.2.0-bin-hadoop2.4>python ec2/spark_ec2.py --key-pair=sparklab --identity-file=sparklab.pem --region=us-west-1 --spark-version=1.2.0 launch my-spark-cluster
+Setting up security groups...
+Creating security group my-spark-cluster-master
+Creating security group my-spark-cluster-slaves
+Searching for existing cluster my-spark-cluster...
+Spark AMI: ami-7a320f3f
+Launching instances...
+Launched 1 slaves in us-west-1a, regid = r-c6b6db0c
+Traceback (most recent call last):
+  File "ec2/spark_ec2.py", line 1082, in <module>
+    main()
+  File "ec2/spark_ec2.py", line 1074, in main
+    real_main()
+  File "ec2/spark_ec2.py", line 926, in real_main
+    (master_nodes, slave_nodes) = launch_cluster(conn, opts, cluster_name)
+  File "ec2/spark_ec2.py", line 478, in launch_cluster
+    user_data=user_data_content)
+  File "C:\Users\Matt\Anaconda\lib\site-packages\boto\ec2\image.py", line 328, i
+n run
+    tenancy=tenancy, dry_run=dry_run)
+  File "C:\Users\Matt\Anaconda\lib\site-packages\boto\ec2\connection.py", line 9
+75, in run_instances
+    verb='POST')
+  File "C:\Users\Matt\Anaconda\lib\site-packages\boto\connection.py", line 1172,
+ in get_object
+    response = self.make_request(action, params, path, verb)
+  File "C:\Users\Matt\Anaconda\lib\site-packages\boto\connection.py", line 1096,
+ in make_request
+    return self._mexe(http_request)
+  File "C:\Users\Matt\Anaconda\lib\site-packages\boto\connection.py", line 927,
+in _mexe
+    response = connection.getresponse()
+  File "C:\Users\Matt\Anaconda\lib\httplib.py", line 1067, in getresponse
+    response.begin()
+  File "C:\Users\Matt\Anaconda\lib\httplib.py", line 409, in begin
+    version, status, reason = self._read_status()
+  File "C:\Users\Matt\Anaconda\lib\httplib.py", line 365, in _read_status
+    line = self.fp.readline(_MAXLINE + 1)
+  File "C:\Users\Matt\Anaconda\lib\socket.py", line 476, in readline
+    data = self._sock.recv(self._rbufsize)
+  File "C:\Users\Matt\Anaconda\lib\ssl.py", line 246, in recv
+    return self.read(buflen)
+  File "C:\Users\Matt\Anaconda\lib\ssl.py", line 165, in read
+    return self._sslobj.read(len)
+KeyboardInterrupt
+
+c:\GADS\spark-1.2.0-bin-hadoop2.4>python ec2/spark_ec2.py --key-pair=sparklab --identity-file=sparklab.pem --region=us-west-1 --spark-version=1.2.0 --copy-aws-credentials --slaves=5 --instance-type=m3.xlarge launch my-spark-cluster1
+Setting up security groups...
+Creating security group my-spark-cluster1-master
+Creating security group my-spark-cluster1-slaves
+Searching for existing cluster my-spark-cluster1...
+Spark AMI: ami-72320f37
+Launching instances...
+Launched 5 slaves in us-west-1a, regid = r-aab6db60
+Launched master in us-west-1a, regid = r-96b6db5c
+Waiting for all instances in cluster to enter 'ssh-ready' state....Traceback (mo
+st recent call last):
+  File "ec2/spark_ec2.py", line 1082, in <module>
+    main()
+  File "ec2/spark_ec2.py", line 1074, in main
+    real_main()
+  File "ec2/spark_ec2.py", line 930, in real_main
+    opts=opts
+  File "ec2/spark_ec2.py", line 640, in wait_for_cluster_state
+    is_cluster_ssh_available(cluster_instances, opts):
+  File "ec2/spark_ec2.py", line 611, in is_cluster_ssh_available
+    if not is_ssh_available(host=i.ip_address, opts=opts):
+  File "ec2/spark_ec2.py", line 602, in is_ssh_available
+    stderr=devnull
+  File "C:\Users\Matt\Anaconda\lib\subprocess.py", line 535, in check_call
+    retcode = call(*popenargs, **kwargs)
+  File "C:\Users\Matt\Anaconda\lib\subprocess.py", line 522, in call
+    return Popen(*popenargs, **kwargs).wait()
+  File "C:\Users\Matt\Anaconda\lib\subprocess.py", line 710, in __init__
+    errread, errwrite)
+  File "C:\Users\Matt\Anaconda\lib\subprocess.py", line 958, in _execute_child
+    startupinfo)
+WindowsError: [Error 2] The system cannot find the file specified
+
+c:\GADS\spark-1.2.0-bin-hadoop2.4>dir
+ Volume in drive C is Windows
+ Volume Serial Number is E02C-7B7E
+
+ Directory of c:\GADS\spark-1.2.0-bin-hadoop2.4
+
+01/29/2015  07:09 PM    <DIR>          .
+01/29/2015  07:09 PM    <DIR>          ..
+01/29/2015  06:39 PM    <DIR>          bin
+01/29/2015  06:39 PM    <DIR>          conf
+12/10/2014  03:00 AM    <DIR>          data
+01/29/2015  06:39 PM    <DIR>          ec2
+12/10/2014  03:00 AM    <DIR>          examples
+01/29/2015  06:39 PM    <DIR>          lib
+12/10/2014  03:00 AM            45,242 LICENSE
+12/10/2014  03:00 AM            22,559 NOTICE
+01/29/2015  06:39 PM    <DIR>          python
+12/10/2014  03:00 AM             3,645 README.md
+12/10/2014  03:00 AM                35 RELEASE
+01/29/2015  06:39 PM    <DIR>          sbin
+01/29/2015  07:07 PM             1,692 sparklab.pem
+               5 File(s)         73,173 bytes
+              10 Dir(s)  428,627,767,296 bytes free
+
+c:\GADS\spark-1.2.0-bin-hadoop2.4>python ec2/spark_ec2.py --key-pair=sparklab --identity-file=sparklab.pem --region=us-west-1 --spark-version=1.2.0 --copy-aws-credentials --slaves=5 --instance-type=m3.xlarge destroy my-spark-cluster1
+Are you sure you want to destroy the cluster my-spark-cluster1?
+The following instances will be terminated:
+Searching for existing cluster my-spark-cluster1...
+Found 1 master(s), 5 slaves
+> ec2-54-153-36-227.us-west-1.compute.amazonaws.com
+> ec2-54-153-36-176.us-west-1.compute.amazonaws.com
+> ec2-54-153-36-202.us-west-1.compute.amazonaws.com
+> ec2-54-153-36-184.us-west-1.compute.amazonaws.com
+> ec2-54-153-36-204.us-west-1.compute.amazonaws.com
+> ec2-54-153-36-174.us-west-1.compute.amazonaws.com
+ALL DATA ON ALL NODES WILL BE LOST!!
+Destroy cluster my-spark-cluster1 (y/N): y
+Terminating master...
+Terminating slaves...
+
+c:\GADS\spark-1.2.0-bin-hadoop2.4>python ec2/spark_ec2.py --key-pair=sparklab --
+identity-file=sparklab.pem --region=us-west-1 --spark-version=1.2.0 --copy-aws-c
+redentials --slaves=5 --instance-type=m3.xlarge destroy my-spark-cluster
+Are you sure you want to destroy the cluster my-spark-cluster?
+The following instances will be terminated:
+Searching for existing cluster my-spark-cluster...
+Found 1 master(s), 1 slaves
+> ec2-54-153-24-139.us-west-1.compute.amazonaws.com
+> ec2-54-67-123-225.us-west-1.compute.amazonaws.com
+ALL DATA ON ALL NODES WILL BE LOST!!
+Destroy cluster my-spark-cluster (y/N): y
+Terminating master...
+Terminating slaves...
+
+c:\GADS\spark-1.2.0-bin-hadoop2.4>python ec2/spark_ec2.py --key-pair=sparklab --
+identity-file=sparklab.pem --region=us-west-1 --spark-version=1.2.0 --copy-aws-c
+redentials launch my-spark-cluster
+Setting up security groups...
+Searching for existing cluster my-spark-cluster...
+Spark AMI: ami-7a320f3f
+Launching instances...
+Launched 1 slaves in us-west-1b, regid = r-c7264a0f
+Launched master in us-west-1b, regid = r-c6264a0e
+Waiting for all instances in cluster to enter 'ssh-ready' state.....Traceback (m
+ost recent call last):
+  File "ec2/spark_ec2.py", line 1082, in <module>
+    main()
+  File "ec2/spark_ec2.py", line 1074, in main
+    real_main()
+  File "ec2/spark_ec2.py", line 930, in real_main
+    opts=opts
+  File "ec2/spark_ec2.py", line 640, in wait_for_cluster_state
+    is_cluster_ssh_available(cluster_instances, opts):
+  File "ec2/spark_ec2.py", line 611, in is_cluster_ssh_available
+    if not is_ssh_available(host=i.ip_address, opts=opts):
+  File "ec2/spark_ec2.py", line 602, in is_ssh_available
+    stderr=devnull
+  File "C:\Users\Matt\Anaconda\lib\subprocess.py", line 535, in check_call
+    retcode = call(*popenargs, **kwargs)
+  File "C:\Users\Matt\Anaconda\lib\subprocess.py", line 522, in call
+    return Popen(*popenargs, **kwargs).wait()
+  File "C:\Users\Matt\Anaconda\lib\subprocess.py", line 710, in __init__
+    errread, errwrite)
+  File "C:\Users\Matt\Anaconda\lib\subprocess.py", line 958, in _execute_child
+    startupinfo)
+WindowsError: [Error 2] The system cannot find the file specified
+
+c:\GADS\spark-1.2.0-bin-hadoop2.4>dir -al
+ Volume in drive C is Windows
+ Volume Serial Number is E02C-7B7E
+
+ Directory of c:\GADS\spark-1.2.0-bin-hadoop2.4
+
+File Not Found
+
+c:\GADS\spark-1.2.0-bin-hadoop2.4>dir
+ Volume in drive C is Windows
+ Volume Serial Number is E02C-7B7E
+
+ Directory of c:\GADS\spark-1.2.0-bin-hadoop2.4
+
+01/29/2015  07:09 PM    <DIR>          .
+01/29/2015  07:09 PM    <DIR>          ..
+01/29/2015  06:39 PM    <DIR>          bin
+01/29/2015  06:39 PM    <DIR>          conf
+12/10/2014  03:00 AM    <DIR>          data
+01/29/2015  06:39 PM    <DIR>          ec2
+12/10/2014  03:00 AM    <DIR>          examples
+01/29/2015  06:39 PM    <DIR>          lib
+12/10/2014  03:00 AM            45,242 LICENSE
+12/10/2014  03:00 AM            22,559 NOTICE
+01/29/2015  06:39 PM    <DIR>          python
+12/10/2014  03:00 AM             3,645 README.md
+12/10/2014  03:00 AM                35 RELEASE
+01/29/2015  06:39 PM    <DIR>          sbin
+01/29/2015  07:07 PM             1,692 sparklab.pem
+               5 File(s)         73,173 bytes
+              10 Dir(s)  428,645,486,592 bytes free
+
+c:\GADS\spark-1.2.0-bin-hadoop2.4>chmod
+'chmod' is not recognized as an internal or external command,
+operable program or batch file.
+
+c:\GADS\spark-1.2.0-bin-hadoop2.4>python ec2/spark_ec2.py --key-pair=sparklab --
+identity-file=sparklab.pem --region=us-west-1 --spark-version=1.2.0 --copy-aws-c
+redentials launch my-spark-cluster
+Setting up security groups...
+Searching for existing cluster my-spark-cluster...
+Found 1 master(s), 1 slaves
+ERROR: There are already instances running in group my-spark-cluster-master or m
+y-spark-cluster-slaves
+
+c:\GADS\spark-1.2.0-bin-hadoop2.4>destroy my-spark-cluster-master
+'destroy' is not recognized as an internal or external command,
+operable program or batch file.
+
+c:\GADS\spark-1.2.0-bin-hadoop2.4>destroy my-spark-cluster
+'destroy' is not recognized as an internal or external command,
+operable program or batch file.
+
+c:\GADS\spark-1.2.0-bin-hadoop2.4>terminate my-spark-cluster-master
+'terminate' is not recognized as an internal or external command,
+operable program or batch file.
+
+c:\GADS\spark-1.2.0-bin-hadoop2.4>python ec2/spark_ec2.py --key-pair=sparklab --
+identity-file=sparklab.pem --region=us-west-1 --spark-version=1.2.0 --copy-aws-c
+redentials destroy my-spark-cluster
+Are you sure you want to destroy the cluster my-spark-cluster?
+The following instances will be terminated:
+Searching for existing cluster my-spark-cluster...
+Found 1 master(s), 1 slaves
+> ec2-54-67-54-61.us-west-1.compute.amazonaws.com
+> ec2-54-67-31-224.us-west-1.compute.amazonaws.com
+ALL DATA ON ALL NODES WILL BE LOST!!
+Destroy cluster my-spark-cluster (y/N): y
+Terminating master...
+Terminating slaves...
+
+c:\GADS\spark-1.2.0-bin-hadoop2.4>python ec2/spark_ec2.py --key-pair=sparklab --
+identity-file=sparklab.pem --region=us-west-1 --spark-version=1.2.0 --copy-aws-c
+redentials destroy my-spark-cluster

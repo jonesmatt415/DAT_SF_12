@@ -1,2 +1,302 @@
 AWSAccessKeyId=AKIAJDLAEMKDSLQRAE2A
 AWSSecretKey=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
+
+Microsoft Windows [Version 6.3.9600]
+(c) 2013 Microsoft Corporation. All rights reserved.
+
+C:\Users\Matt>cd/
+
+C:\>cd dats
+The system cannot find the path specified.
+
+C:\>cd gads
+
+C:\GADS>cd
+C:\GADS
+
+C:\GADS>cd dat_sf_12
+
+C:\GADS\DAT_SF_12>ls ~/.starcluster/config
+'ls' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\GADS\DAT_SF_12>~/.starcluster/config
+'~' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\GADS\DAT_SF_12>vi ~/.starcluster/config
+'vi' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\GADS\DAT_SF_12>starcluster help
+'starcluster' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\GADS\DAT_SF_12>pip install starcluster
+Collecting starcluster
+  Downloading StarCluster-0.95.6.tar.gz (2.4MB)
+    100% |################################| 2.4MB 585kB/s ta 0:00:01
+Collecting paramiko>=1.12.1 (from starcluster)
+  Downloading paramiko-1.15.2-py2.py3-none-any.whl (165kB)
+    100% |################################| 167kB 1.2MB/s ta 0:00:01
+Requirement already satisfied (use --upgrade to upgrade): boto>=2.23.0 in c:\use
+rs\matt\anaconda\lib\site-packages (from starcluster)
+Collecting workerpool>=0.9.2 (from starcluster)
+  Downloading workerpool-0.9.2.tar.gz
+Requirement already satisfied (use --upgrade to upgrade): Jinja2>=2.7 in c:\user
+s\matt\anaconda\lib\site-packages (from starcluster)
+Requirement already satisfied (use --upgrade to upgrade): decorator>=3.4.0 in c:
+\users\matt\anaconda\lib\site-packages (from starcluster)
+Collecting iptools>=0.6.1 (from starcluster)
+  Downloading iptools-0.6.1.tar.gz
+Collecting optcomplete>=1.2-devel (from starcluster)
+  Downloading optcomplete-1.2-devel.tar.gz
+    C:\Users\Matt\Anaconda\lib\site-packages\setuptools-12.0.3-py2.7.egg\setupto
+ols\dist.py:292: UserWarning: The version specified ('1.2-devel') is an invalid
+version, this may not work as expected with newer versions of setuptools, pip, a
+nd PyPI. Please see PEP 440 for more details.
+Requirement already satisfied (use --upgrade to upgrade): pycrypto>=2.5 in c:\us
+ers\matt\anaconda\lib\site-packages (from starcluster)
+Collecting scp>=0.7.1 (from starcluster)
+  Downloading scp-0.8.0.tar.gz
+Collecting iso8601>=0.1.8 (from starcluster)
+  Downloading iso8601-0.1.10.tar.gz
+Collecting ecdsa>=0.11 (from paramiko>=1.12.1->starcluster)
+  Downloading ecdsa-0.11.tar.gz (45kB)
+    100% |################################| 49kB 2.4MB/s ta 0:00:011
+Installing collected packages: ecdsa, iso8601, scp, optcomplete, iptools, worker
+pool, paramiko, starcluster
+  Running setup.py install for ecdsa
+  Running setup.py install for iso8601
+  Running setup.py install for scp
+  Running setup.py install for optcomplete
+    C:\Users\Matt\Anaconda\lib\site-packages\setuptools-12.0.3-py2.7.egg\setupto
+ols\dist.py:292: UserWarning: The version specified ('1.2-devel') is an invalid
+version, this may not work as expected with newer versions of setuptools, pip, a
+nd PyPI. Please see PEP 440 for more details.
+    C:\Users\Matt\Anaconda\lib\site-packages\setuptools-12.0.3-py2.7.egg\pkg_res
+ources\__init__.py:2510: PEP440Warning: 'optcomplete (1.2-devel)' is being parse
+d as a legacy, non PEP 440, version. You may find odd behavior and sort order. I
+n particular it will be sorted as less than 0.0. It is recommend to migrate to P
+EP 440 compatible versions.
+  Running setup.py install for iptools
+  Running setup.py install for workerpool
+
+  Running setup.py install for starcluster
+    Installing starcluster-script.py script to C:\Users\Matt\Anaconda\Scripts
+    Installing starcluster.exe script to C:\Users\Matt\Anaconda\Scripts
+Successfully installed ecdsa-0.11 iptools-0.6.1 iso8601-0.1.10 optcomplete-1.2-d
+evel paramiko-1.15.2 scp-0.8.0 starcluster-0.95.6 workerpool-0.9.2
+
+C:\GADS\DAT_SF_12>vi ~/.starcluster/config
+'vi' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\GADS\DAT_SF_12>ls ~/.starcluster/config
+'ls' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\GADS\DAT_SF_12>~/starcluster/config
+'~' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\GADS\DAT_SF_12>starcluster help
+StarCluster - (http://star.mit.edu/cluster) (v. 0.95.6)
+Software Tools for Academics and Researchers (STAR)
+Please submit bug reports to starcluster@mit.edu
+
+!!! ERROR - config file C:\Users\Matt\.starcluster\config does not exist
+
+Options:
+--------
+[1] Show the StarCluster config template
+[2] Write config template to C:\Users\Matt\.starcluster\config
+[q] Quit
+
+Please enter your selection: 2
+
+>>> Config template written to C:\Users\Matt\.starcluster\config
+>>> Please customize the config template
+
+C:\GADS\DAT_SF_12>open
+'open' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\GADS\DAT_SF_12>ls
+'ls' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\GADS\DAT_SF_12>start notepad ~/.starcluster/config
+
+C:\GADS\DAT_SF_12>cd ~/.starcluster
+The system cannot find the path specified.
+
+C:\GADS\DAT_SF_12>cd
+C:\GADS\DAT_SF_12
+
+C:\GADS\DAT_SF_12>cd C:\Users\Matt\.starcluster/
+
+C:\Users\Matt\.starcluster>ls
+'ls' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Matt\.starcluster>dir
+ Volume in drive C is Windows
+ Volume Serial Number is E02C-7B7E
+
+ Directory of C:\Users\Matt\.starcluster
+
+01/27/2015  06:35 PM    <DIR>          .
+01/27/2015  06:35 PM    <DIR>          ..
+01/27/2015  06:35 PM            14,066 config
+01/27/2015  06:35 PM    <DIR>          logs
+01/27/2015  06:35 PM    <DIR>          plugins
+               1 File(s)         14,066 bytes
+               4 Dir(s)  429,759,651,840 bytes free
+
+C:\Users\Matt\.starcluster>open notepad config
+'open' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Matt\.starcluster>start notepad config
+
+C:\Users\Matt\.starcluster>cd ..
+
+C:\Users\Matt>cd .ssh
+
+C:\Users\Matt\.ssh>starcluster createkey mykey -o mykey.rsa
+StarCluster - (http://star.mit.edu/cluster) (v. 0.95.6)
+Software Tools for Academics and Researchers (STAR)
+Please submit bug reports to starcluster@mit.edu
+
+>>> Successfully created keypair: mykey
+>>> fingerprint: 57:6c:80:e3:ab:8f:03:8c:e2:2a:43:9e:6f:e1:f1:37:a8:d9:0c:a5
+>>> keypair written to mykey.rsa
+
+C:\Users\Matt\.ssh>starcluster start smallcluster
+StarCluster - (http://star.mit.edu/cluster) (v. 0.95.6)
+Software Tools for Academics and Researchers (STAR)
+Please submit bug reports to starcluster@mit.edu
+
+>>> Using default cluster template: smallcluster
+>>> Validating cluster template settings...
+>>> Cluster template settings are valid
+>>> Starting cluster...
+>>> Launching a 2-node cluster...
+>>> Creating security group @sc-smallcluster...
+>>> Waiting for security group @sc-smallcluster...
+Reservation:r-17e190fc
+>>> Waiting for instances to propagate...
+2/2 |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| 100%
+>>> Waiting for cluster to come up... (updating every 30s)
+>>> Waiting for all nodes to be in a 'running' state...
+2/2 |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| 100%
+>>> Waiting for SSH to come up on all nodes...
+2/2 |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| 100%
+>>> Waiting for cluster to come up took 1.467 mins
+>>> The master node is ec2-54-86-7-221.compute-1.amazonaws.com
+>>> Configuring cluster...
+>>> Running plugin starcluster.clustersetup.DefaultClusterSetup
+>>> Configuring hostnames...
+2/2 |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| 100%
+>>> Creating cluster user: sgeadmin (uid: 1001, gid: 1001)
+2/2 |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| 100%
+>>> Configuring scratch space for user(s): sgeadmin
+2/2 |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| 100%
+>>> Configuring /etc/hosts on each node
+2/2 |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| 100%
+>>> Starting NFS server on master
+>>> Configuring NFS exports path(s):
+/home
+>>> Mounting all NFS export path(s) on 1 worker node(s)
+1/1 |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| 100%
+>>> Setting up NFS took 0.183 mins
+>>> Configuring passwordless ssh for root
+>>> Configuring passwordless ssh for sgeadmin
+>>> Running plugin starcluster.plugins.sge.SGEPlugin
+>>> Configuring SGE...
+>>> Configuring NFS exports path(s):
+/opt/sge6
+>>> Mounting all NFS export path(s) on 1 worker node(s)
+1/1 |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| 100%
+>>> Setting up NFS took 0.161 mins
+>>> Installing Sun Grid Engine...
+1/1 |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| 100%
+>>> Creating SGE parallel environment 'orte'
+2/2 |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| 100%
+>>> Adding parallel environment 'orte' to queue 'all.q'
+>>> Running plugin ipcluster
+>>> Writing IPython cluster config files
+>>> Starting the IPython controller and 1 engines on master
+>>> Waiting for JSON connector file...
+>>> Creating IPCluster cache directory: C:\Users\Matt\.starcluster\ipcluster
+C:\Users\Matt\.starcluster\ipcluster\SecurityGroup:@sc-smallcluster-us-east-1.js
+C:\Users\Matt\.starcluster\ipcluster\SecurityGroup:@sc-smallcluster-us-east-1.js
+on 100% || Time: 00:00:00   3.36 K/s
+>>> Authorizing tcp ports [54347-54347] on 0.0.0.0/0 for: control
+>>> Authorizing tcp ports [59638-59638] on 0.0.0.0/0 for: task
+>>> Authorizing tcp ports [53914-53914] on 0.0.0.0/0 for: notification
+>>> Authorizing tcp ports [38059-38059] on 0.0.0.0/0 for: mux
+>>> Authorizing tcp ports [41218-41218] on 0.0.0.0/0 for: iopub
+>>> Authorizing tcp ports [53026-53026] on 0.0.0.0/0 for: registration
+>>> Adding 1 engines on 1 nodes
+1/1 |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| 100%
+>>> Setting up IPython web notebook for user: sgeadmin
+>>> Creating SSL certificate for user sgeadmin
+>>> Authorizing tcp ports [8888-8888] on 0.0.0.0/0 for: notebook
+>>> IPython notebook URL: https://ec2-54-86-7-221.compute-1.amazonaws.com:8888
+>>> The notebook password is: metallica
+*** WARNING - Please check your local firewall settings if you're having
+*** WARNING - issues connecting to the IPython notebook
+>>> IPCluster has been started on SecurityGroup:@sc-smallcluster for user 'sgead
+min'
+with 2 engines on 2 nodes.
+
+To connect to cluster from your local machine use:
+
+from IPython.parallel import Client
+client = Client('C:\Users\Matt\.starcluster\ipcluster\SecurityGroup:@sc-smallclu
+ster-us-east-1.json', sshkey='C:\Users\Matt/.ssh/mykey.rsa')
+
+See the IPCluster plugin doc for usage details:
+http://star.mit.edu/cluster/docs/latest/plugins/ipython.html
+
+>>> IPCluster took 0.580 mins
+>>> Configuring cluster took 2.574 mins
+>>> Starting cluster took 4.611 mins
+
+The cluster is now ready to use. To login to the master node
+as root, run:
+
+    $ starcluster sshmaster smallcluster
+
+If you're having issues with the cluster you can reboot the
+instances and completely reconfigure the cluster from
+scratch using:
+
+    $ starcluster restart smallcluster
+
+When you're finished using the cluster and wish to terminate
+it and stop paying for service:
+
+    $ starcluster terminate smallcluster
+
+Alternatively, if the cluster uses EBS instances, you can
+use the 'stop' command to shutdown all nodes and put them
+into a 'stopped' state preserving the EBS volumes backing
+the nodes:
+
+    $ starcluster stop smallcluster
+
+WARNING: Any data stored in ephemeral storage (usually /mnt)
+will be lost!
+
+You can activate a 'stopped' cluster by passing the -x
+option to the 'start' command:
+
+    $ starcluster start -x smallcluster
+
+This will start all 'stopped' nodes and reconfigure the
+cluster.
+
+C:\Users\Matt\.ssh>
